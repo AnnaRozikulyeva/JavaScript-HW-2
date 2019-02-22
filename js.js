@@ -116,9 +116,9 @@ switch (a) {
     arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного
     значения операции выполнить одну из арифметических операций (использовать функции из пункта 3) и 
     вернуть полученное значение (использовать switch). */
-    var arg1 = Math.floor (Math.random() * 10 + 1);
-    var arg2 = Math.floor (Math.random() * 10 + 1);
-    var operation = "/";
+    var arg1 = + prompt ("Введите первый аргумент");
+    var arg2 = + prompt ("Введите второй аргумент");
+    var operation = prompt ("Введите операцию (*, /, +, -)");
     function mathOperation(arg1, arg2, operation) {
         switch (operation) {
             case "+":
